@@ -4,11 +4,11 @@ use 5.008003;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
-Extension::CustomField::Checkbox - extension for RT to add checkboxes and radio buttons based custom fields
+RT::Extension::CustomField::Checkbox - extension for RT to add checkboxes and radio buttons based custom fields
 
 =head1 DESCRIPTION
 
