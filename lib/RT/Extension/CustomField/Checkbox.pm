@@ -4,11 +4,11 @@ use 5.008003;
 use strict;
 use warnings;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 =head1 NAME
 
-RT::Extension::CustomField::Checkbox - extension for RT to add checkboxes and radio buttons based custom fields
+RT::Extension::CustomField::Checkbox (DEPRECATED) - extension for RT to add checkboxes and radio buttons based custom fields
 
 =head1 DESCRIPTION
 
@@ -19,19 +19,8 @@ Install it, register within @Plugins in the config. Enjoy.
 You don't need this extension. RT 4.0 and newer has this
 functionality build in.
 
-If you're B<upgrading> from RT 3.8 and used this extension
-then additinal steps may be required. At least RT 4.0.0
-and 4.0.1 has no upgrade script to convert custom fields
-created by this extensions into 4.x CFs.
-
-Run the following SQL:
-
-    UPDATE CustomFields SET Type = 'Select' AND RenderType = 'List'
-    WHERE Type = 'SelectCheckbox';
-
-Delete this extension from @Plugins in the config file.
-
-Hopefuly in RT 4.0.2 all this would be automated.
+RT 4.0.20 and 4.2.3 ship etc/upgrade/4.0-customfield-checkbox-extension
+which can upgrade these custom fields to be compatible with the RT 4.0 core feature.
 
 =cut
 

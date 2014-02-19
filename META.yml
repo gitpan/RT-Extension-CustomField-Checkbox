@@ -1,13 +1,14 @@
 ---
-abstract: 'extension for RT to add checkboxes and radio buttons based custom fields'
+abstract: 'RT Extension-CustomField-Checkbox Extension'
 author:
   - 'Ruslan Zakirov <Ruslan.Zakirov@gmail.com>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.59
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.59
 distribution_type: module
-generated_by: 'Module::Install version 1.01'
+dynamic_config: 1
+generated_by: 'Module::Install version 1.06'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -21,4 +22,4 @@ requires:
   perl: 5.8.3
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.03
+version: 0.04
